@@ -395,6 +395,7 @@ export default function Scorer() {
         body: JSON.stringify({
           resumeText,
           role,
+          jobDescription,
           code: tier === "free" ? "" : codeInput.trim().toUpperCase(),
           tier,
         }),
